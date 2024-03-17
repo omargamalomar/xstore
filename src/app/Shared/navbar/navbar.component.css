@@ -1,0 +1,22 @@
+.navi  .content-in-nav .logo{
+    font-size: 32px;
+    font-weight: 700;
+}
+.navi .content-in-nav form input{
+    height: 40px;
+    width: 460px;
+    outline: none;
+    position: relative;
+}
+.navi .content-in-nav form input::before{
+    content: "/f002";
+    font-weight: 900;
+    position: absolute;
+}
+.navi  .content-in-nav form button{
+    height: 40px;
+    width: 90px;
+    background-color: #00B207;
+    color: #fff;
+    border: none;
+}
