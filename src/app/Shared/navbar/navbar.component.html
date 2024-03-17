@@ -1,26 +1,50 @@
-<div class="navi">
+<div class="frist-nav bg-dark p-2">
   <div class="container">
-    <div class="content-in-nav d-flex p-2 justify-content-between">
-      <a class="navbar-brand logo" routerLink="home">
-        <img src="../../../assets/images/Vector.png" alt="" />
-        Ecobazar
-      </a>
-      <form class="d-flex">
-        <input class="" type="text" placeholder="Search" />
-        <button class="">Search</button>
-      </form>
-      <div class="watch-cart">
-        <a>
-          <i class="fa-regular fa-heart fa-xl"></i>
-        </a>
-        <a>
-          <i class="fa-solid fa-cart-plus fa-xl"></i>
-        </a>
+    <div class="row">
+      <div class="info d-flex justify-content-between">
+        <div class="locaition">
+					<i class="fa-solid fa-location-dot me-2"></i>
+          <span>Store Location: Lincoln- 344, Illinois, Chicago, USA</span>
+        </div>
+        <div class="rig">
+          <a routerLink="login">Sign In |</a>
+          <a routerLink="register"> Sign Up</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<div class="navi mt-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <a class="navbar-brand logo" routerLink="home">
+          <img src="../../../assets/images/Vector.png" alt="" />
+          Ecobazar
+        </a>
+      </div>
+      <div class="col-md-6">
+        <form class="d-flex mt-2">
+          <input class="" type="text" placeholder="Search" />
+          <button class="">Search</button>
+        </form>
+      </div>
+      <div class="col-md-2">
+        <div class="watch-cart mt-3 d-flex justify-content-end">
+          <a routerLink="wish" class="me-2">
+            <i class="fa-regular fa-heart fa-xl"></i>
+          </a>
+          <span class="lin">|</span>
+          <a class="position-relative" routerLink="cart">
+            <i class="fa-solid fa-cart-plus fa-xl"></i>
+            <span class="position-absolute">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary mt-2">
   <div class="container">
     <button
       class="navbar-toggler"
@@ -36,24 +60,36 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a
+            class="nav-link"
+						routerLinkActive="active-link"
+            aria-current="page"
+            routerLink="home"
+            >Home</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a routerLinkActive="active-link" class="nav-link" routerLink="shop"
+            >Shop</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Shop</a>
+          <a routerLinkActive="active-link" class="nav-link" routerLink="pages"
+            >Pages</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pages</a>
+          <a routerLinkActive="active-link" class="nav-link" routerLink="about"
+            >About Us</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a routerLinkActive="active-link" class="nav-link" routerLink="contact"
+            >Contact Us</a
+          >
         </li>
       </ul>
+			<span class="tele"><i class="fa-solid fa-phone-volume ms-auto"></i> (219) 555-0114</span>
     </div>
   </div>
 </nav>
